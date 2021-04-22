@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+  	width: 100vw;
+  	border-radius: 0;
+  }
+
+  .header {
+  	border-radius: 0;
+  }
+
+  .header #today {
+  	width: 100vw;
+  }
+
+  .content {
+  	padding: 0 5vw;
+  }
+
+  .add-list {
+  	width: calc(100% - 10vw);
+  	border-radius: 0;
+  	grid-gap: 0;
+  	padding: 20px 5vw;
+  }
+
+  .add-list input {
+  	width: calc(100vw - 10vw - 3rem - 10vw);
+  }
+}

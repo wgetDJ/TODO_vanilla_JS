@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="./assets/images/fav-icon.svg" rel="shortcut icon" type="image/x-icon"/>
+
+	<meta charset="UTF-8">
+
+	<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+	<title>To-Do | Vanilla JavaScript</title>
+
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./assets/css/style.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="./assets/css/media.css" type="text/css" charset="utf-8" />
+	<script type="text/javascript" src="./assets/js/app.js"></script>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="header">
+			
+			<div id="today">
+				<script>currentDay();</script>
+			</div>
+
+		</div>
+
+		<div class="content">
+
+			<div class="todo">
+			
+				<div class="lists unfinished">
+
+					<div id="dot" onclick="jobComplete();">
+						<div class="v-center">
+							<span class="material-icons-outlined">radio_button_unchecked</span>
+						</div>
+					</div>
+
+					<div id="text">text somethng about something</div>
+
+					<div id="delete" onclick="jobDelete();">
+						<div class="v-center">
+							<span class="material-icons-outlined">delete</span>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="lists finished">
+					<div id="dot" onclick="jobComplete();">
+						<div class="v-center">
+							<span class="material-icons-outlined">check_circle_outline</span>
+						</div>
+					</div>
+
+					<div id="text">text somethng about something</div>
+
+					<div id="delete" onclick="jobDelete();">
+						<div class="v-center">
+							<span class="material-icons-outlined">delete</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			
+
+		</div>
+
+		<div class="add-list">
+				
+			<div id="input-list">
+				<input type="text" name="" placeholder="Add list">
+			</div>
+
+			<div id="add-btn">
+				<div class="v-center" onclick="addJob();">
+					<span class="material-icons-outlined">add_circle</span>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</script>
+
+</body>
+</html>
