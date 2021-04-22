@@ -20,6 +20,10 @@
   	padding: 0 5vw;
   }
 
+  .content .todo .lists {
+  	background-color: #222222;
+  }
+
   .add-list {
   	width: calc(100% - 10vw);
   	border-radius: 0;
