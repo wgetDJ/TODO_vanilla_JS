@@ -9,12 +9,52 @@ body {
 	width: 100%;
 }
 
+.loader {
+	width: 480px;
+    margin: 0 auto;
+    height: 100vh;
+    border-radius: 20px;
+    background-color: #0c0c0c;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader .loading-data {
+	margin: 0 auto;
+	width: 480px;
+	display: grid;
+	grid-template-rows: 80px auto;
+	grid-gap: 30px;
+	width: 90%;
+}
+
+.loader .loading-data .image {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+.loader .loading-data .image img {
+	width: 80px;
+	height: auto;
+}
+
+.loader .loading-data .quote {
+	text-align: center;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
 .container {
     width: 480px;
     margin: auto;
     min-height: 100vh;
     border-radius: 20px;
     background-color: #0c0c0c;
+    display: none;
 }
 
 .header {

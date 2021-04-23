@@ -21,6 +21,26 @@ function currentDay(){
 
 	let today = currentMonth + " " + currentDate + ", " + currentYear
 
-	// document.getElementById('today').innerHTML = today;
 	document.write(today);
+}
+
+
+// function loader() {
+// 	// let loading = document.getElementsByClassName('loader');
+// 	// loading.style.display = "none";
+// 	// let app = document.getElementsByClassName("container");
+// 	// app.style.display = "block";
+// 	// document.getElementsByClassName("loader").style.display = "none";
+// }
+
+// let time = setTimeout(loader, 4000);
+
+function loader() {
+	document.getElementsByClassName("loader").innerHTML = document.getElementsByClassName("container").innerHTML;
+}
+
+// setTimeout(loader, 4000);
+
+function addJob() {
+
 }
